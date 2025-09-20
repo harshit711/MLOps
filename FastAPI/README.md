@@ -3,7 +3,8 @@
 This is a FastAPI-based machine learning API for predicting Iris flower species using scikit-learn. The app loads a trained model and exposes REST endpoints for predictions and health checks.
 
 **FastAPI**: FastAPI is a modern, fast (high-performance), web framework for building APIs with Python based on standard Python type hints.
-2. **uvicorn**: Uvicorn is an [Asynchronous Server Gateway Interface - ASGI](https://youtu.be/vKjCkeJGbNk) web server implementation for Python. It is often used to serve FastAPI aplications.
+
+**uvicorn**: Uvicorn is an [Asynchronous Server Gateway Interface - ASGI](https://youtu.be/vKjCkeJGbNk) web server implementation for Python. It is often used to serve FastAPI aplications.
 
 The workflow involves the following steps:
 1. Training a Decision Tree Classifier on Iris Dataset.
