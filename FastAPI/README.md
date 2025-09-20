@@ -36,6 +36,8 @@ The workflow involves the following steps:
    
 You can also test out the results of your endpoints by interacting with them. Click on the dropdown button of your endpoint -> Try it out -> Fill the Request body -> Click on Execute button.
 
+You will get a response similar to the one below:
+
 ```bash
 {
   "response": 0,
