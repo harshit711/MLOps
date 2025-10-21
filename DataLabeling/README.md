@@ -6,6 +6,7 @@ This project demonstrates how to build a Spam vs Ham text classifier for YouTube
 
 ## Project Structure
 
+```bash
 ├── data/
 │   ├── Youtube01–Psy.csv
 │   ├── Youtube02–KatyPerry.csv
@@ -15,6 +16,7 @@ This project demonstrates how to build a Spam vs Ham text classifier for YouTube
 ├── utils.py
 ├── Data_labeling_lab.ipynb
 └── README.md
+```
 
 ## Project Workflow
 
