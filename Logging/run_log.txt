@@ -1,0 +1,5 @@
+2025-10-27 23:08:59 | DEBUG | Debug message logged to file.
+2025-10-27 23:08:59 | INFO | Info message logged to file.
+2025-10-27 23:08:59 | WARNING | Warning message logged to file.
+2025-10-27 23:08:59 | ERROR | Error message logged to file.
+2025-10-27 23:08:59 | CRITICAL | Critical message logged to file.

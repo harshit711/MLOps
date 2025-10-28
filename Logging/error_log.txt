@@ -1,0 +1,6 @@
+2025-10-27 23:08:59,932 - ERROR - Error occurred while accessing index 5
+Traceback (most recent call last):
+  File "/var/folders/2p/2ggclrc97tg98rrxnb_rp6vh0000gn/T/ipykernel_5712/2020224807.py", line 10, in get_element_from_list
+    element = lst[index]
+              ~~~^^^^^^^
+IndexError: list index out of range

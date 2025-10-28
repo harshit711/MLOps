@@ -1,0 +1,8 @@
+2025-10-27 23:08:59 - INFO - Pipeline started.
+2025-10-27 23:08:59 - INFO - Step 1: Validating data.
+2025-10-27 23:08:59 - INFO - Validated 3 records.
+2025-10-27 23:08:59 - INFO - Step 2: Transforming data.
+2025-10-27 23:08:59 - INFO - Transformation complete.
+2025-10-27 23:08:59 - INFO - Step 3: Saving data.
+2025-10-27 23:08:59 - INFO - Successfully saved 3 records.
+2025-10-27 23:08:59 - INFO - Pipeline completed successfully.
