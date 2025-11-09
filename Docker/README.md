@@ -28,4 +28,4 @@ docker build -t house-price-fastapi .
 docker run -p 8000:8000 house-price-fastapi
 ```
 
-The app will be available at http://localhost:8500/docs
+The app will be available at http://localhost:8000/docs
