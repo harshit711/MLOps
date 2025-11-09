@@ -30,5 +30,10 @@ docker run -p 8000:8000 house-price-fastapi
 
 The app will be available at http://localhost:8000/docs
 
+The sample of the app running on FastAPI:
+
 <img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/b4c9212c-8b3a-4361-88e6-b013481dbeb4" />
+
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/745ccfd1-514d-405d-9418-618a9f4139ec" />
+
 
