@@ -12,7 +12,6 @@ os.makedirs(METRICS_DIR, exist_ok=True)
 
 
 def save_model(model):
-    """Save model with timestamp"""
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     path = os.path.join(MODELS_DIR, f"model_{timestamp}.pkl")
 
@@ -24,13 +23,11 @@ def save_model(model):
 
 
 def load_latest_model():
-    """Load the most recent model file from GitActions/models"""
     files = [f for f in os.listdir(MODELS_DIR) if f.endswith(".pkl")]
 
     if not files:
         raise FileNotFoundError("No model .pkl files found in models directory.")
 
-    # Get newest model file by timestamp
     latest = sorted(files)[-1]
     path = os.path.join(MODELS_DIR, latest)
 
@@ -42,7 +39,6 @@ def load_latest_model():
 
 
 def save_metrics(metrics_dict):
-    """Save metrics json file"""
     import json
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
