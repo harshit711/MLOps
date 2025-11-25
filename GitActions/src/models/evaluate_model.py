@@ -1,10 +1,15 @@
-from sklearn.metrics import accuracy_score, f1_score
-from sklearn.model_selection import train_test_split
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 from src.features.generate_data import generate_air_quality_data
 from src.models.model_utils import load_latest_model, save_metrics
 
-def evaluate_model():
+from sklearn.metrics import accuracy_score, f1_score
+from sklearn.model_selection import train_test_split
+
+def evaluate():
     df = generate_air_quality_data()
 
     X = df.drop("risk", axis=1)
@@ -14,18 +19,18 @@ def evaluate_model():
         X, y, test_size=0.2, random_state=42
     )
 
-    model, filename = load_latest_model()
+    model, model_name = load_latest_model()
 
     preds = model.predict(X_test)
 
     metrics = {
-        "model_file": filename,
+        "model": model_name,
         "accuracy": accuracy_score(y_test, preds),
         "f1_score": f1_score(y_test, preds)
     }
 
-    metrics_path = save_metrics(metrics)
-    print("Evaluation saved:", metrics_path)
+    save_metrics(metrics)
+    print("Evaluation complete.")
 
 if __name__ == "__main__":
-    evaluate_model()
+    evaluate()
