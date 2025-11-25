@@ -1,10 +1,15 @@
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
 from src.features.generate_data import generate_air_quality_data
 from src.models.model_utils import save_model
 
-def train_model():
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+def train():
     df = generate_air_quality_data()
 
     X = df.drop("risk", axis=1)
@@ -17,8 +22,8 @@ def train_model():
     model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
 
-    path = save_model(model)
-    print(f"Model saved to {path}")
+    save_model(model)
+    print("Model training complete.")
 
 if __name__ == "__main__":
-    train_model()
+    train()
