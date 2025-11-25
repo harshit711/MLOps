@@ -2,9 +2,6 @@ import pandas as pd
 from sklearn.datasets import make_classification
 
 def generate_air_quality_data(n_samples=1000, random_state=42):
-    """
-    Generates synthetic air quality data with 8 features and a binary label 'risk'.
-    """
     X, y = make_classification(
         n_samples=n_samples,
         n_features=8,
